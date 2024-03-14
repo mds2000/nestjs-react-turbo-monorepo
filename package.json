@@ -1,0 +1,27 @@
+{
+  "name": "nestjs-react-turbo-monorepo",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start:dev": "turbo run start:dev --no-daemon",
+    "build": "turbo run build",
+    "start": "npm run build && node apps/api/dist/main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mds2000/nestjs-react-turbo-monorepo.git"
+  },
+  "author": "Matías da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mds2000/nestjs-react-turbo-monorepo/issues"
+  },
+  "homepage": "https://github.com/mds2000/nestjs-react-turbo-monorepo#readme",
+  "devDependencies": {
+    "turbo": "^1.9.9"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
